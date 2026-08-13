@@ -1,4 +1,4 @@
-# AWS, Terraform, dbt, Glue, Redshift & Apache Iceberg: An ETL Pipeline for Cloud Data Transformation and Modeling
+# An ETL Pipeline for Cloud Data Transformation and Modeling using AWS, Terraform, dbt, Glue, Redshift & Apache Iceberg
 
 ## Overview
 
