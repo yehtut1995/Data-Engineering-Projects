@@ -1,0 +1,76 @@
+[0m14:17:57.827749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071f01f290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071f496090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071f495fa0>]}
+
+
+============================== 14:17:57.831146 | 35703415-ee4d-412b-b71c-bf90f6509478 ==============================
+[0m14:17:57.831146 [info ] [MainThread]: Running with dbt=1.8.1
+[0m14:17:57.839441 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/coder/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/coder/project/dbt_modeling/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:17:57.857427 [info ] [MainThread]: dbt version: 1.8.1
+[0m14:17:57.858025 [info ] [MainThread]: python version: 3.12.7
+[0m14:17:57.863222 [info ] [MainThread]: python path: /home/coder/miniconda/bin/python
+[0m14:17:57.868227 [info ] [MainThread]: os info: Linux-6.5.0-1024-aws-x86_64-with-glibc2.35
+[0m14:17:57.939324 [info ] [MainThread]: Using profiles dir at /home/coder/.dbt
+[0m14:17:57.940034 [info ] [MainThread]: Using profiles.yml file at /home/coder/.dbt/profiles.yml
+[0m14:17:57.944516 [info ] [MainThread]: Using dbt_project.yml file at /home/coder/project/dbt_modeling/dbt_project.yml
+[0m14:17:57.950743 [info ] [MainThread]: adapter type: postgres
+[0m14:17:57.956164 [info ] [MainThread]: adapter version: 1.8.1
+[0m14:17:58.052915 [info ] [MainThread]: Configuration:
+[0m14:17:58.053440 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:17:58.059482 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:17:58.067813 [info ] [MainThread]: Required dependencies:
+[0m14:17:58.072281 [debug] [MainThread]: Executing "git --help"
+[0m14:17:58.086186 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:17:58.086780 [debug] [MainThread]: STDERR: "b''"
+[0m14:17:58.093570 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:17:58.099902 [info ] [MainThread]: Connection:
+[0m14:17:58.106229 [info ] [MainThread]:   host: de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com
+[0m14:17:58.120495 [info ] [MainThread]:   port: 5432
+[0m14:17:58.126910 [info ] [MainThread]:   user: defaultuser
+[0m14:17:58.135374 [info ] [MainThread]:   database: dev
+[0m14:17:58.141507 [info ] [MainThread]:   schema: deftunes_serving
+[0m14:17:58.146629 [info ] [MainThread]:   connect_timeout: 10
+[0m14:17:58.153056 [info ] [MainThread]:   role: None
+[0m14:17:58.159023 [info ] [MainThread]:   search_path: None
+[0m14:17:58.163891 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:17:58.169503 [info ] [MainThread]:   sslmode: None
+[0m14:17:58.175714 [info ] [MainThread]:   sslcert: None
+[0m14:17:58.183281 [info ] [MainThread]:   sslkey: None
+[0m14:17:58.188637 [info ] [MainThread]:   sslrootcert: None
+[0m14:17:58.194718 [info ] [MainThread]:   application_name: dbt
+[0m14:17:58.199523 [info ] [MainThread]:   retries: 1
+[0m14:17:58.204375 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m14:17:58.301899 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:17:58.378032 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:17:58.378556 [debug] [MainThread]: On debug: select 1 as id
+[0m14:17:58.383384 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:18:28.424488 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+
+[0m14:18:58.459348 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:18:58.462559 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:18:58.463125 [debug] [MainThread]: On debug: No close available on handle
+[0m14:18:58.463526 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:18:58.463918 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:18:58.464304 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+  connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+  connection to server at "de-c4w4a1-redshift-cluster.c3boili8odoz.us-east-1.redshift.amazonaws.com" (100.61.75.131), port 5432 failed: timeout expired
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:18:58.465279 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 60.710056, "process_user_time": 1.659306, "process_kernel_time": 0.204438, "process_mem_max_rss": "95972", "process_in_blocks": "40665", "process_out_blocks": "352", "command_success": false}
+[0m14:18:58.471503 [debug] [MainThread]: Command `dbt debug` failed at 14:18:58.471334 after 60.72 seconds
+[0m14:18:58.477289 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:18:58.483131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071eb7ade0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071ef7e0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75071fd87950>]}
+[0m14:18:58.489118 [debug] [MainThread]: Flushing usage events
