@@ -49,6 +49,9 @@ Snowflake TPC-H sample data
 
 ## Models and data quality
 
+<img width="1355" height="637" alt="snowflake sc" src="https://github.com/user-attachments/assets/88c8e03d-f59d-4344-a288-dcf4d042cbe6" />
+Figure: Snowflake worksheet used to provision the dbt environment, including the warehouse, database, role, schema, and required access grants.
+
 The staging layer exposes `stg_tpch_orders` and `stg_tpch_line_items` as Snowflake views. The intermediate layer creates `int_order_items` and `int_order_items_summary`, which calculate item-level discount amounts and aggregate gross sales and discounts by order. The mart layer creates `fct_orders` as a table containing order attributes together with summarized item-level measures.
 
 Data quality checks include uniqueness and non-null constraints for key columns, relationship checks between orders and line items, accepted values for order status (`P`, `O`, and `F`), validation of order dates, and a check that calculated discount amounts are not positive.
@@ -81,9 +84,7 @@ The staging models are configured as Snowflake views, while the mart models are 
 
 ## Tutorial reference
 
-This project was completed by referring to a YouTube tutorial on building a Snowflake and dbt data pipeline. Replace the placeholder below with the exact video link used for the implementation:
-
-> **YouTube tutorial:** [Add the tutorial URL here](PASTE_YOUTUBE_TUTORIAL_URL_HERE)
+This project was completed by referring to a YouTube tutorial on building a Snowflake and dbt data pipeline. 
 
 The project is an educational implementation and may contain adaptations made while following the tutorial.
 
