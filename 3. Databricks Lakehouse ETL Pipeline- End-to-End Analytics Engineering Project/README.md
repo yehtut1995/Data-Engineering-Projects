@@ -305,10 +305,6 @@ A monthly comparison of total booking revenue, showing the distribution of reven
 
 The dashboard includes a **Booking Status** filter, allowing users to interactively analyze booking metrics by status.
 
-### Dashboard Preview
-
-![Bookings Analytics Dashboard](images/dashboard.png)
-
 ## SQL Analytics
 
 The `sql/` directory contains the SQL queries used to generate the dashboard metrics and analytical views.
@@ -338,12 +334,9 @@ databricks-lakehouse-project/
 │   └── 04_data_quality_&_gold_transformation_wanderbricks.py
 │
 ├── sql/
-│   ├── dashboard_queries_1.sql
-│   └── dashboard_queries_2.sql
-│
-└── images/
-    ├── dashboard.png
-    └── workflow.png
+    ├── dashboard_queries_1.sql
+    └── dashboard_queries_2.sql
+
 ```
 
 ## Key Data Engineering Concepts Demonstrated
