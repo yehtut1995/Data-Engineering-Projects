@@ -231,6 +231,8 @@ These Gold tables provide the analytical foundation for the Databricks SQL dashb
 ## Workflow Orchestration
 
 The pipeline is orchestrated using **Databricks Workflows**.
+<img width="1343" height="623" alt="job schedule sc" src="https://github.com/user-attachments/assets/fe504143-615e-498b-83c0-35d58e0c463d" />
+
 
 The workflow contains sequential tasks:
 
@@ -254,12 +256,16 @@ The completed workflow was successfully executed using Databricks Serverless com
 ### Workflow Preview
 
 ![Databricks Workflow](images/workflow.png)
+Fig. Workflow orchestration
 
 ## Dashboard
 
 The Gold tables are queried using **Databricks SQL** to create an interactive **Bookings Analytics Dashboard**.
 
 The dashboard provides a comprehensive overview of booking performance and trends.
+
+<img width="946" height="1221" alt="dashboard" src="https://github.com/user-attachments/assets/f95cc05b-5a38-4251-be25-2ffcb9a5c603" />
+Fig. Dashboard
 
 ### Key Performance Indicators
 
